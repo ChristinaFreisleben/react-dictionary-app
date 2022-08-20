@@ -19,7 +19,7 @@ export default function Dictionary() {
         placeholder="Enter a word ..."
         onChange={handleSearchtermChange}
       />
-      <input type="submit" />
+      <input type="submit" value="🪄" />
     </form>
   );
 }

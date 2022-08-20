@@ -1,5 +1,16 @@
+.App header {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0 40px;
+  font-family: "Aboreto", cursive;
+}
+
 .App footer {
   text-align: center;
   font-size: 10px;
   margin: 30px;
+}
+
+div .container {
+  max-width: 800px;
 }
