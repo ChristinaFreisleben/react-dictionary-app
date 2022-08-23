@@ -9,7 +9,16 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer>Coded by Christina Freisleben</footer>
+        <footer>
+          <a
+            href="https://github.com/ChristinaFreisleben/react-dictionary-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by Christina Freisleben
+        </footer>
       </div>
     </div>
   );
