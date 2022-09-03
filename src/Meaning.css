@@ -1,0 +1,8 @@
+.Meaning .meaningBlock {
+  margin: 30px;
+}
+
+.Meaning .example {
+  font-style: italic;
+  opacity: 70%;
+}

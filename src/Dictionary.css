@@ -1,3 +1,10 @@
 form {
   text-align: center;
 }
+
+.Dictionary section {
+  background-color: rgba(188, 143, 143, 20%);
+  margin: 30px;
+  padding: 0 20px;
+  border-radius: 6px;
+}
