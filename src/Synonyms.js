@@ -2,8 +2,7 @@ import React from "react";
 import "./Synonyms.css";
 
 export default function Synonyms(props) {
-  console.log(props.synonyms > 0);
-  if (props.synonyms) {
+  if (props.synonyms > 0) {
     return (
       <div className="Synonyms">
         <ul>
@@ -14,6 +13,10 @@ export default function Synonyms(props) {
       </div>
     );
   } else {
-    return "Unfortunately we could not find any synonyms for this word";
+    return (
+      <div className="Synonyms">
+        Unfortunately we could not find any synonyms for this word
+      </div>
+    );
   }
 }
