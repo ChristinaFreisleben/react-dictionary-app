@@ -1,0 +1,27 @@
+.Phonetics {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.Phonetics a {
+  color: rosybrown;
+  text-decoration: none;
+  padding: 8px 15px;
+  font-size: 13px;
+  margin-right: 10px;
+  border-radius: 20px;
+  transition: all 150ms ease-in-out;
+  border: 1px solid;
+  border-color: rosybrown;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.Phonetics a:hover {
+  background-color: rgba(188, 143, 143, 10%);
+  transition: all 200ms ease-in-out;
+}
+
+.Phonetics .text {
+  opacity: 50%;
+}
