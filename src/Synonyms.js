@@ -13,10 +13,6 @@ export default function Synonyms(props) {
       </div>
     );
   } else {
-    return (
-      <div className="Synonyms">
-        Unfortunately we could not find any synonyms for this word
-      </div>
-    );
+    return null;
   }
 }

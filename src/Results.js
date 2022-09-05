@@ -32,11 +32,19 @@ export default function Results(props) {
         <section className="synonyms">
           <h3>Synonyms</h3>
           {props.results.meanings.map(function (meaning, index) {
-            return (
-              <div key={index}>
-                <Synonyms synonyms={meaning.synonyms} />
-              </div>
-            );
+            if (index > 0) {
+              return (
+                <div key={index}>
+                  <Synonyms synonyms={meaning.synonyms} />
+                </div>
+              );
+            } else {
+              return (
+                <span className="noSynonyms">
+                  Unfortunately we could not find any synonyms for this word
+                </span>
+              );
+            }
           })}
         </section>
       </div>
