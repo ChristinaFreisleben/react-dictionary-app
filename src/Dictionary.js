@@ -27,7 +27,6 @@ export default function Dictionary() {
   }
 
   function handelPexelsResponse(response) {
-    console.log(response);
     setPhotos(response.data.photos);
   }
 

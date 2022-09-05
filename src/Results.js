@@ -5,7 +5,6 @@ import Meaning from "./Meaning";
 import Synonyms from "./Synonyms";
 
 export default function Results(props) {
-  console.log(props.results);
   if (props.results) {
     return (
       <div className="results">
@@ -32,18 +31,14 @@ export default function Results(props) {
         <section className="synonyms">
           <h3>Synonyms</h3>
           {props.results.meanings.map(function (meaning, index) {
-            if (index > 0) {
+            if (props.results.meanings[0].synonyms.length > 1) {
               return (
                 <div key={index}>
                   <Synonyms synonyms={meaning.synonyms} />
                 </div>
               );
             } else {
-              return (
-                <span className="noSynonyms">
-                  Unfortunately we could not find any synonyms for this word
-                </span>
-              );
+              return null;
             }
           })}
         </section>
